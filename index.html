@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+    <meta name='viewport' content='width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no;'>
+    <head>
+        <meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
+        <meta content='utf-8' http-equiv='encoding'>
+        <title>M.Evans</title>
+        <link rel='stylesheet' href='./main_styles.css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet'>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+        <script src='./main_app.js'></script>
+    </head>
+    
+    <body>
+        <header>
+        </header>
+        <main>
+            <div class='container'>
+                <h1>Michael D. Evans</h1>
+                <h3>Research scientist looking for work!</h3>
+                <h3 class='section-title'>About</h3>
+                <div class='flex-container'>
+                    <div id = 'fc-me' class='flex-child light-greyblue unselectable'><span class='flex-text'>Me</span></div>
+                    <div id = 'fc-cv' class='flex-child greyblue unselectable'><span class='flex-text'>CV</span></div>
+                    <div id = 'fc-pub' class='flex-child dark-greyblue unselectable' id='about-pub'><span class='flex-text'>Publications</span></div>
+                    <div id = 'fc-git' class='flex-child dark-greyblue unselectable' id='about-git'><span class='flex-text'>Git</span></div>
+                </div>
+                
+                <div id='about-display' class='display-div' style='display:none'></div>
+                
+                <h3 class='section-title'>Projects</h3>
+                <div class='flex-container'>
+                    <div id = 'fc-rl' class ='flex-child red unselectable'><span class='flex-text'>Risk Sensitive RL Task</span></div>
+                    <div id = 'fc-scr' class = 'flex-child orange unselectable'><span class='flex-text'>FishFry</span></div>
+                    <div id = 'fc-icecream' class = 'flex-child yellow unselectable' ><span class='flex-text'>Ice Cream Game</span></div>
+                    <div id = 'fc-dnd' class = 'flex-child green unselectable'  ><span class='flex-text'>DND Spell Slots</span></div>
+                    <div id = 'fc-rsample' class='flex-child blue unselectable'><span class='flex-text'>Simulated Study (R)</span></div>
+                    <div id = 'fc-plant' class = 'flex-child violet unselectable'><span class='flex-text'>Plant Parent</span></div>
+                </div>
+                
+                <div id='project-display' class='display-div' style='display:none'></div>
+                
+                <h3 class='section-title'>Contact</h3>
+                <div class='flex-container'>
+                    <div id = 'fc-email' class='flex-child dark-greyred unselectable'><span class='flex-text'>email</span></div>
+                    <div id = 'fc-twitter' class='flex-child greyred unselectable'><span class='flex-text'>twitter</span></div>
+                </div>
+                <div id='contact-display' class='display-div' style='display:none'></div>
+            </div>
+        </main>
+        
+    </body>
+    
+    
+    
+</html>

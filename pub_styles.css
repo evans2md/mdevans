@@ -1,0 +1,46 @@
+.pub-list{
+  margin: auto;
+  width: 80%;
+  text-align: left;
+  line-height: 2em;
+}
+
+.pub-item{
+  padding-left: 2vw;
+  text-indent: -2vw;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a.pub-item{
+  color:white;
+}
+
+a:visited {
+  color: white;
+}
+
+.pub-item:hover{
+  color: #4787DE;
+}
+
+a:hover{
+  color: #4787DE;
+}
+
+#home-button{
+  padding: 1vw;
+}
+
+#home-button:hover{
+  padding: 1vw 2vw 1vw 2vw;
+  animation: t 1s;
+}
+
+@keyframes t{
+  0%{padding:1vw;}
+  100%{padding: 1vw 2vw 1vw 2vw;}
+}

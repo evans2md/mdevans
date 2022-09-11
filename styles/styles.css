@@ -1,0 +1,169 @@
+html {
+  background: #111111;
+  font-family: 'Montserrat', sans-serif;
+  color: #EFEFEF;
+  align-content: center;
+}
+
+
+body {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 80vw;
+  height: 100vh;
+}
+
+.loadCont {
+  margin: 10%;
+}
+
+.loader {
+  margin: auto;
+  border: 16px solid lightblue;
+  border-top: 16px solid #ff8080;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+
+.preload{
+  visibility: hidden;
+}
+
+.container {
+  background: #222222;
+  margin: auto;
+  margin-top: 5vh;
+  height: 90vh;
+  width: 80vw;
+  position: relative;
+  overflow: hidden;
+}
+
+*.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.section-title{
+  margin-top: 5vh;
+  position: relative;
+  right: 20vw;
+}
+
+.flex-container{
+  display: flex;
+  width: 100%;
+  padding: 0vw 5vw 0vw 5vw;
+  margin: 0vh 0vw 0vh -5vw;
+  height: 6vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-child{  
+  width: 6vw;
+  height: 2vw;
+  border: .5vw solid transparent;
+  margin: .2vw;
+  line-height: 1em;
+  
+  font-weight: bold;
+}
+
+.flex-text{
+  margin-top: 0;
+  position: relative;
+  top: -2.5vw;
+}
+
+.flex-child:hover{
+  border-width: .5vw;
+  margin: .2vw 1vw .2vw 1vw;
+  animation: t 1s;
+}
+
+@keyframes t{
+  0%{margin: .2vw;}
+  100%{margin: .2vw 1vw .2vw 1vw;}
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes spin { 
+  100% { 
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes border-pulse {
+  0% { border-color: rgba(255, 255, 255, 0); }
+  50% {border-color: rgba(255, 255, 255, 1);}
+  100% {border-color: rgba(255, 255, 255, 0);}
+}
+
+@keyframes pad-grow{
+  0%{margin:.2vw;}
+  100%{margin: .2vw 1.5vw .2vw 1.5vw;}
+}
+
+
+.light-red{
+  background: #EF6D56;
+}
+.red{
+  background: #E14526;
+}
+
+.dark-red{
+  background: #AF331D;
+}
+
+.orange{
+  background:#E19726;
+}
+.yellow{
+  background: #EBE83A;
+}
+.green{
+  background: #32DB41;
+}
+
+.light-blue{
+  background: #80B1F2;
+}
+.blue{
+  background: #4787DE;
+}
+.dark-blue{
+  background: #33609B;
+}
+.violet{
+  background: #7747DE;
+}
+
+.light-greyblue{
+  background: #B7D3F7;
+}.greyblue{
+  background: #92B2DB;
+}.dark-greyblue{
+  background: #6D8AAD;
+}
+
+.light-greyred{
+  background: #F2BAB0;
+}.greyred{
+  background: #E59182;
+}.dark-greyred{
+  background: #AD665A;
+}
