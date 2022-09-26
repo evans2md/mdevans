@@ -1,10 +1,11 @@
 html {
-  background: #111111;
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   font-family: 'Montserrat', sans-serif;
   color: #EFEFEF;
   align-content: center;
 }
-
 
 body {
   margin: auto;
@@ -12,187 +13,116 @@ body {
   position: relative;
 }
 
-a{
-  color: #4787DE;
-}
-
-p{
-  line-height:200%;
-  text-align: left;
-  margin:auto;
-  width: 80%;
-}
-
-.loadCont {
-  margin: 10%;
-}
-
-.loader {
-  margin: auto;
-  border: 16px solid lightblue;
-  border-top: 16px solid #ff8080;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
-
-
-.preload{
-  visibility: hidden;
-}
-
 .container {
-  background: #222222;
   margin: auto;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  padding-top: 2vh;
-  padding-bottom: 5vh;
+  padding-top: 20vh;
   width: 70vw;
+  height: 50vh;
   position: relative;
+  text-align: center;
+  /*background: rgba(50,100,50,0.5);*/
 }
 
-.unselectable {
-   -moz-user-select: -moz-none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
+h1{
+  font-size: 6em;
+  font-weight: 100;
 }
 
-.section-title{
-  margin-top: 5vh;
-  margin-bottom: 4vh;
-  position: relative;
-  right: 20vw;
+h2{
+  font-size: 3em;
+  font-weight: 100;
+}
+
+.post-thumb {
+    float: left;
+}
+.post-thumb img {
+    display: block;
+    padding-top: 50%;
+}
+
+#face-pic{
+  margin-top: -33%;
+  margin-left: 50%;
+  width: 17vw;
+}
+
+.post-content {
+    margin:auto;
+    /*margin-left: 17vw;*/
+}
+
+#links{
+  width: 60%;
+  height: 35vh;
+  margin-top: 15vh;
+  margin-left:15vw;
+  display: flex;
+}
+.circle{
+  flex: 1;
+  width: 15vw;
+  height: 50vw;
+  border: solid 0.4vw #26323A;
+  border-radius: 15vw;
+  margin-left: 2.5vw;
+  display: block;
+}
+
+.circle:hover{
+  /*border: solid 0.4vw rgba(255,255,255,0.4);*/
+  animation: border-pulse 1s;
+}
+
+.red{
+  background: #9F4A56;
+}
+
+.orange{
+  background:#9F694A;
+}
+
+.yellow{
+  background: #979F4A;
+}
+
+.green{
+  background: #4A9F4A;
+}
+
+.blue{
+  background: #4A7D9F;
 }
 
 .flex-container{
   display: flex;
-  flex-wrap: wrap;
-  width: 70vw;
+  width: 100%;
   padding: 0vw 5vw 0vw 5vw;
-  margin: 5vh 0vw 0vh -5vw;
+  margin: 0vh 0vw 0vh -5vw;
+  height: 6vw;
   align-items: center;
   justify-content: center;
 }
-input{
-  color:red;
-  background: blue;
-}
-
-.flex-child{  
-  height: 2vw;
-  border: .5vw solid transparent;
-  margin: .2vw;
-  line-height: 1em;
-  
-  font-weight: bold;
-}
-
-.flex-text{
-  margin-top: 0;
-  font-size: 1vw;
-  position: relative;
-}
-
-.flex-child:hover{
-  border-width: .5vw;
-}
-
-.wide-child{
-  width: 8vw;
-  min-width: 100px;
-  color: black;
-}
-
-.wide-child:hover{
-  margin: .2vw 1.5vw .2vw 1.5vw;
-  animation: pad-grow 1s;
-}
-
-.tall-child{
-  width: 90%;
-  color:black;  
-}
-
-.tall-child:hover{
-  animation: border-pulse 1s infinite;
-}
-
-.display-div{
-  margin: auto;
-  padding: 15px 0px 15px 0px;
-  width: 69vw;
-  height: auto;
-  background: #1C1C1C;
-}
-
-b{
-  color: #83E7EA;
-}
-
 
 @keyframes border-pulse {
   0% { border-color: rgba(255, 255, 255, 0); }
-  50% {border-color: rgba(255, 255, 255, 1);}
-  100% {border-color: rgba(255, 255, 255, 0);}
+  /*50% {border-color: rgba(255, 255, 255, 0.5);}*/
+  100% {border-color: rgba(255, 255, 255, 1);}
 }
 
-@keyframes pad-grow{
-  0%{margin:.2vw;}
-  100%{margin: .2vw 1.5vw .2vw 1.5vw;}
+@keyframes spin { 
+  100% { 
+    transform: rotateX(360deg);
+  }
 }
 
+@keyframes t{
+  0%{margin: .2vw;}
+  100%{margin: .2vw 1vw .2vw 1vw;}
 }
 
-.light-red{
-  background: #EF6D56;
-}
-.red{
-  background: #E14526;
-}
-
-.dark-red{
-  background: #AF331D;
-}
-
-.orange{
-  background:#E19726;
-}
-.yellow{
-  background: #EBE83A;
-}
-.green{
-  background: #32DB41;
-}
-
-.light-blue{
-  background: #80B1F2;
-}
-.blue{
-  background: #4787DE;
-}
-.dark-blue{
-  background: #33609B;
-}
-.violet{
-  background: #7747DE;
-}
-
-.light-greyblue{
-  background: #B7D3F7;
-}.greyblue{
-  background: #92B2DB;
-}.dark-greyblue{
-  background: #6D8AAD;
-}
-
-.light-greyred{
-  background: #F78C79;
-}.greyred{
-  background: #ED6249;
-}.dark-greyred{
-  background: #D35039;
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }

@@ -78,7 +78,7 @@ var main = function(){
       // inside: picture
       // short blurb:
    });
-   $abt_me.click(); // open on load
+   //$abt_me.click(); // open on load
    
    $abt_cv.click(function(){
       openDisplay($abt_display,$abt_cv);
